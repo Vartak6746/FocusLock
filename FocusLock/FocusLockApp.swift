@@ -12,10 +12,10 @@ struct FocusLockApp: App {
             
             // --- UI WHEN LOCKED ---
             if focusManager.isLocked {
-                Text("🔒 Locked to: \(focusManager.targetAppName)")
+                Text("Locked to: \(focusManager.targetAppName)")
                 
                 if !focusManager.allowedApps.isEmpty {
-                    Text("✅ Allowed: \(focusManager.allowedApps.joined(separator: ", "))")
+                    Text("Allowed: \(focusManager.allowedApps.joined(separator: ", "))")
                         .font(.caption)
                 }
                 
