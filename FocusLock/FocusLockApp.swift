@@ -64,7 +64,7 @@ struct FocusLockApp: App {
         } label: {
             // DYNAMIC ICON LOGIC:
             // Checks if locked, and shows the corresponding Apple SF Symbol
-            Image(systemName: focusManager.isLocked ? "lock" : "lock.open")
+            Image(systemName: focusManager.isLocked ? "lock.fill" : "lock.open.fill")
                 .font(.system(size: 16, weight: .semibold))
         }
     }
