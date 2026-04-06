@@ -68,6 +68,7 @@
 				A79701F62F7FEC4B00F24F22 /* Sources */,
 				A79701F72F7FEC4B00F24F22 /* Frameworks */,
 				A79701F82F7FEC4B00F24F22 /* Resources */,
+				A796F5CE2F83881200D97076 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +127,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A796F5CE2F83881200D97076 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Create the user's Applications folder just in case it doesn't exist\nmkdir -p ~/Applications\n\n# Copy the freshly built app directly to the Applications folder\ncp -R \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" ~/Applications/\n\necho \"✅ Successfully copied ${FULL_PRODUCT_NAME} to your Applications folder!\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A79701F62F7FEC4B00F24F22 /* Sources */ = {
